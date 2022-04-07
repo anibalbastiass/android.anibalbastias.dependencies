@@ -1,6 +1,6 @@
 ext {
     lib_modules = [
-            "uikit_compose": ":uikit-compose"
+            "uikit_compose": ":android.anibalbastias.uikit-compose"
     ]
     versions = [
             project: [
