@@ -25,7 +25,10 @@ ext {
                                     "activity"        : "1.4.0",
                                     "navigation"      : "2.4.1",
                                     "constraintLayout": "1.0.0",
-                                    "accompanist"     : "0.23.1"
+                                    "accompanist"     : "0.23.1",
+                                    "paging"          : "1.0.0-alpha14",
+                                    "hiltNavigation"  : "1.0.0",
+                                    "roomPaging"      : "2.5.0-alpha01"
                             ],
                             "appCompat"             : "1.4.1",
                             "recyclerView"          : "1.2.1",
@@ -35,8 +38,8 @@ ext {
                             "fragment"              : "1.4.1",
                             "swipeRefreshLayout"    : "1.0.0",
                             "lifecycle"             : "2.4.1",
-                            'paging'                : '2.1.2',
-                            'room'                  : '2.2.4'
+                            'paging'                : '3.1.1',
+                            'room'                  : '2.4.2'
                     ],
                     "google"           : [
                             "material": "1.5.0",
@@ -96,7 +99,8 @@ ext {
                             "navigation"      : "androidx.navigation:navigation-compose:$versions.deps.androidx.compose.navigation",
                             "constraintLayout": "androidx.constraintlayout:constraintlayout-compose:$versions.deps.androidx.compose.constraintLayout",
                             "accompanist"     : [
-                                    "swipeRefresh": "com.google.accompanist:accompanist-swiperefresh:$versions.deps.androidx.compose.accompanist"
+                                    "swipeRefresh"       : "com.google.accompanist:accompanist-swiperefresh:$versions.deps.androidx.compose.accompanist",
+                                    "navigationAnimation": "com.google.accompanist:accompanist-navigation-animation:$versions.deps.androidx.compose.accompanist"
                             ]
                     ],
                     "appCompat"             : "androidx.appcompat:appcompat:$versions.deps.androidx.appCompat",
@@ -109,17 +113,29 @@ ext {
                     "navigationFragment"    : "androidx.navigation:navigation-fragment-ktx:$versions.deps.navigation",
                     "lifecycleViewModel"    : "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.deps.androidx.lifecycle",
                     "lifecycleLiveData"     : "androidx.lifecycle:lifecycle-livedata-ktx:$versions.deps.androidx.lifecycle",
-                    "daggerHiltViewModel"   : "androidx.hilt:hilt-lifecycle-viewmodel:$versions.deps.daggerHiltJetpack",
-                    "daggerHiltCompiler"    : "androidx.hilt:hilt-compiler:$versions.deps.daggerHiltJetpack",
-                    "paging"                : "androidx.paging:paging-runtime:$versions.deps.androidx.paging",
-                    "room"                  : "androidx.room:room-runtime:$versions.deps.androidx.room",
-                    "roomCompiler"          : "androidx.room:room-compiler:$versions.deps.androidx.room"
+                    "daggerHilt"            : [
+                            "viewModel"        : "androidx.hilt:hilt-lifecycle-viewmodel:$versions.deps.daggerHiltJetpack",
+                            "compiler"         : "androidx.hilt:hilt-compiler:$versions.deps.daggerHiltJetpack",
+                            "navigationCompose": "androidx.hilt:hilt-navigation-compose:$versions.deps.androidx.compose.hiltNavigation"
+                    ],
+                    "paging"                : [
+                            "runtime": "androidx.paging:paging-runtime:$versions.deps.androidx.paging",
+                            "compose": "androidx.paging:paging-compose:$versions.deps.androidx.compose.paging",
+                    ],
+                    "room"                  : [
+                            "runtime" : "androidx.room:room-runtime:$versions.deps.androidx.room",
+                            "compiler": "androidx.room:room-compiler:$versions.deps.androidx.room",
+                            "ktx"     : "androidx.room:room-ktx:$versions.deps.androidx.room",
+                            "paging"  : "androidx.room:room-paging:$versions.deps.androidx.compose.roomPaging"
+                    ]
             ],
             "google"      : [
-                    "material"          : "com.google.android.material:material:$versions.deps.google.material",
-                    "daggerHiltAndroid" : "com.google.dagger:hilt-android:$versions.deps.daggerHilt",
-                    "daggerHiltCompiler": "com.google.dagger:hilt-android-compiler:$versions.deps.daggerHilt",
-                    "flexbox"           : "com.google.android.flexbox:flexbox:$versions.deps.google.flexbox",
+                    "material"  : "com.google.android.material:material:$versions.deps.google.material",
+                    "daggerHilt": [
+                            "android" : "com.google.dagger:hilt-android:$versions.deps.daggerHilt",
+                            "compiler": "com.google.dagger:hilt-android-compiler:$versions.deps.daggerHilt"
+                    ],
+                    "flexbox"   : "com.google.android.flexbox:flexbox:$versions.deps.google.flexbox",
             ],
             "square"      : [
                     "retrofit"     : "com.squareup.retrofit2:retrofit:$versions.deps.square.retrofit",
