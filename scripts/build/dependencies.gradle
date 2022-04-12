@@ -111,8 +111,11 @@ ext {
                     "fragmentKtx"           : "androidx.fragment:fragment-ktx:$versions.deps.androidx.fragment",
                     "swipeRefreshLayout"    : "androidx.swiperefreshlayout:swiperefreshlayout:$versions.deps.androidx.swipeRefreshLayout",
                     "navigationFragment"    : "androidx.navigation:navigation-fragment-ktx:$versions.deps.navigation",
-                    "lifecycleViewModel"    : "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.deps.androidx.lifecycle",
-                    "lifecycleLiveData"     : "androidx.lifecycle:lifecycle-livedata-ktx:$versions.deps.androidx.lifecycle",
+                    "lifecycle"             : [
+                            "viewModel" : "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.deps.androidx.lifecycle",
+                            "liveData"  : "androidx.lifecycle:lifecycle-livedata-ktx:$versions.deps.androidx.lifecycle",
+                            "runtimeKtx": "androidx.lifecycle:lifecycle-runtime-ktx:$versions.deps.androidx.lifecycle"
+                    ],
                     "daggerHilt"            : [
                             "viewModel"        : "androidx.hilt:hilt-lifecycle-viewmodel:$versions.deps.daggerHiltJetpack",
                             "compiler"         : "androidx.hilt:hilt-compiler:$versions.deps.daggerHiltJetpack",
