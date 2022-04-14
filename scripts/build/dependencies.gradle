@@ -18,7 +18,7 @@ ext {
                     "compose"          : "1.1.1",
                     "coroutinesAndroid": "1.6.0",
                     "navigation"       : "2.4.1",
-                    "daggerHilt"       : "2.37",
+                    "daggerHilt"       : "2.40.5",
                     "daggerHiltJetpack": "1.0.0-alpha03",
                     "androidx"         : [
                             "compose"               : [
