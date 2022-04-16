@@ -85,9 +85,10 @@ ext {
                     "kotlinCoroutinesAndroid": "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.deps.coroutinesAndroid"
             ],
             'thirdParty'  : [
-                    'coil'       : "io.coil-kt:coil:2.0.0-rc02",
-                    "coilCompose": "io.coil-kt:coil-compose:2.0.0-rc02",
-                    'fastScroll' : "com.reddit:indicator-fast-scroll:1.4.0"
+                    'coil'                : "io.coil-kt:coil:2.0.0-rc02",
+                    "coilCompose"         : "io.coil-kt:coil-compose:2.0.0-rc02",
+                    'fastScroll'          : "com.reddit:indicator-fast-scroll:1.4.0",
+                    'sharedElementCompose': "com.mxalbert.sharedelements:shared-elements:0.1.0-SNAPSHOT"
             ],
             "androidx"    : [
                     "compose"               : [
@@ -100,6 +101,7 @@ ext {
                             "constraintLayout": "androidx.constraintlayout:constraintlayout-compose:$versions.deps.androidx.compose.constraintLayout",
                             "accompanist"     : [
                                     "swipeRefresh"       : "com.google.accompanist:accompanist-swiperefresh:$versions.deps.androidx.compose.accompanist",
+                                    "flowLayout"         : "com.google.accompanist:accompanist-flowlayout:$versions.deps.androidx.compose.accompanist",
                                     "navigationAnimation": "com.google.accompanist:accompanist-navigation-animation:$versions.deps.androidx.compose.accompanist"
                             ]
                     ],
