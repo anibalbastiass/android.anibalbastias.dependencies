@@ -30,6 +30,9 @@ ext {
                                     "hiltNavigation"  : "1.0.0",
                                     "roomPaging"      : "2.5.0-alpha01"
                             ],
+                            "core"                  : [
+                                    "splashScreen": "1.0.0-alpha01"
+                            ],
                             "appCompat"             : "1.4.1",
                             "recyclerView"          : "1.2.1",
                             "constraintLayout"      : "2.1.3",
@@ -106,6 +109,9 @@ ext {
                             ]
                     ],
                     "appCompat"             : "androidx.appcompat:appcompat:$versions.deps.androidx.appCompat",
+                    "core"                  : [
+                            "splashScreen": "androidx.core:core-splashscreen:$versions.deps.androidx.core.splashScreen"
+                    ],
                     "recyclerView"          : "androidx.recyclerview:recyclerview:$versions.deps.androidx.recyclerView",
                     "constraintLayout"      : "androidx.constraintlayout:constraintlayout:$versions.deps.androidx.constraintLayout",
                     "constraintLayoutSolver": "androidx.constraintlayout:constraintlayout-solver:$versions.deps.androidx.constraintLayoutSolver",
