@@ -34,8 +34,8 @@ ext {
                                     "splashScreen": "1.0.0-alpha01"
                             ],
                             "datastore"             : [
-                                    "datastore"  : "1.0.0",
-                                    "protobuf"   : "3.19.4"
+                                    "datastore": "1.0.0",
+                                    "protobuf" : "3.19.4"
                             ],
                             "appCompat"             : "1.4.1",
                             "recyclerView"          : "1.2.1",
@@ -96,7 +96,8 @@ ext {
                     "coilCompose"         : "io.coil-kt:coil-compose:2.0.0-rc02",
                     'fastScroll'          : "com.reddit:indicator-fast-scroll:1.4.0",
                     'lottieCompose'       : "com.airbnb.android:lottie-compose:5.0.3",
-                    'sharedElementCompose': "com.mxalbert.sharedelements:shared-elements:0.1.0-SNAPSHOT"
+                    'sharedElementCompose': "com.mxalbert.sharedelements:shared-elements:0.1.0-SNAPSHOT",
+                    'toolbarCompose'      : "me.onebone:toolbar-compose:2.3.3"
             ],
             "androidx"    : [
                     "compose"               : [
