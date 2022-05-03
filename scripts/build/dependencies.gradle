@@ -92,12 +92,14 @@ ext {
                     "kotlinCoroutinesAndroid": "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.deps.coroutinesAndroid"
             ],
             'thirdParty'  : [
-                    'coil'                : "io.coil-kt:coil:2.0.0-rc02",
-                    "coilCompose"         : "io.coil-kt:coil-compose:2.0.0-rc02",
-                    'fastScroll'          : "com.reddit:indicator-fast-scroll:1.4.0",
-                    'lottieCompose'       : "com.airbnb.android:lottie-compose:5.0.3",
-                    'sharedElementCompose': "com.mxalbert.sharedelements:shared-elements:0.1.0-SNAPSHOT",
-                    'toolbarCompose'      : "me.onebone:toolbar-compose:2.3.3"
+                    'coil'                  : "io.coil-kt:coil:2.0.0-rc02",
+                    "coilCompose"           : "io.coil-kt:coil-compose:2.0.0-rc02",
+                    'fastScroll'            : "com.reddit:indicator-fast-scroll:1.4.0",
+                    'lottieCompose'         : "com.airbnb.android:lottie-compose:5.0.3",
+                    'sharedElementCompose'  : "com.mxalbert.sharedelements:shared-elements:0.1.0-SNAPSHOT",
+                    'toolbarCompose'        : "me.onebone:toolbar-compose:2.3.3",
+                    'youTubePlayer'         : "com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1",
+                    'youTubePlayerChromcast': "com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.26"
             ],
             "androidx"    : [
                     "compose"               : [
