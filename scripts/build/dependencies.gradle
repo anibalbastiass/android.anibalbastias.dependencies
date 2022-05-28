@@ -28,7 +28,10 @@ ext {
                                     "accompanist"     : "0.23.1",
                                     "paging"          : "1.0.0-alpha14",
                                     "hiltNavigation"  : "1.0.0",
-                                    "roomPaging"      : "2.5.0-alpha01"
+                                    "roomPaging"      : "2.5.0-alpha01",
+                                    "material3"       : [
+                                            "windowSizeClass": "1.0.0-alpha12"
+                                    ]
                             ],
                             "core"                  : [
                                     "splashScreen": "1.0.0-alpha01"
@@ -46,7 +49,8 @@ ext {
                             "swipeRefreshLayout"    : "1.0.0",
                             "lifecycle"             : "2.4.1",
                             'paging'                : '3.1.1',
-                            'room'                  : '2.4.2'
+                            'room'                  : '2.4.2',
+                            "windowManager"         : "1.0.0",
                     ],
                     "google"           : [
                             "material": "1.5.0",
@@ -112,7 +116,11 @@ ext {
                             "accompanist"     : [
                                     "swipeRefresh"       : "com.google.accompanist:accompanist-swiperefresh:$versions.deps.androidx.compose.accompanist",
                                     "flowLayout"         : "com.google.accompanist:accompanist-flowlayout:$versions.deps.androidx.compose.accompanist",
-                                    "navigationAnimation": "com.google.accompanist:accompanist-navigation-animation:$versions.deps.androidx.compose.accompanist"
+                                    "navigationAnimation": "com.google.accompanist:accompanist-navigation-animation:$versions.deps.androidx.compose.accompanist",
+                                    "systemUiController" : "com.google.accompanist:accompanist-systemuicontroller:$versions.deps.androidx.compose.accompanist"
+                            ],
+                            "material3"       : [
+                                    "windowSizeClass": "androidx.compose.material3:material3-window-size-class:$versions.deps.androidx.compose.material3.windowSizeClass"
                             ]
                     ],
                     "appCompat"             : "androidx.appcompat:appcompat:$versions.deps.androidx.appCompat",
@@ -150,7 +158,8 @@ ext {
                             "compiler": "androidx.room:room-compiler:$versions.deps.androidx.room",
                             "ktx"     : "androidx.room:room-ktx:$versions.deps.androidx.room",
                             "paging"  : "androidx.room:room-paging:$versions.deps.androidx.compose.roomPaging"
-                    ]
+                    ],
+                    "windowManager"         : "androidx.window:window:$versions.deps.androidx.windowManager"
             ],
             "google"      : [
                     "material"  : "com.google.android.material:material:$versions.deps.google.material",
